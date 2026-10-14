@@ -1,0 +1,607 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="description" content="La Balance — un outil Révéla, par DSP Avocats. Peser une proposition d’accord avant de dire oui : ce qu’elle vaut face à votre solution de rechange, ce qui manque au texte, et comment répondre." />
+<meta name="robots" content="index, follow" />
+<meta name="theme-color" content="#F7F3EA" />
+<title>La Balance — peser une proposition d’accord · un outil Révéla</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 26'%3E%3Cpolyline points='13.00,13.00%2013.01,12.93%2013.04,12.86%2013.09,12.80%2013.15,12.76%2013.23,12.73%2013.32,12.71%2013.42,12.72%2013.52,12.76%2013.62,12.81%2013.71,12.89%2013.79,12.99%2013.86,13.11%2013.90,13.25%2013.92,13.40%2013.92,13.56%2013.89,13.73%2013.82,13.90%2013.73,14.07%2013.60,14.23%2013.44,14.37%2013.26,14.49%2013.05,14.58%2012.82,14.64%2012.57,14.67%2012.31,14.66%2012.05,14.61%2011.79,14.51%2011.53,14.38%2011.29,14.20%2011.08,13.98%2010.89,13.72%2010.74,13.43%2010.63,13.11%2010.57,12.77%2010.55,12.41%2010.59,12.05%2010.69,11.68%2010.84,11.33%2011.05,10.99%2011.31,10.67%2011.62,10.40%2011.98,10.16%2012.37,9.97%2012.80,9.84%2013.25,9.78%2013.72,9.77%2014.19,9.84%2014.66,9.98%2015.11,10.18%2015.54,10.46%2015.93,10.80%2016.28,11.20%2016.56,11.65%2016.79,12.15%2016.94,12.69%2017.02,13.25%2017.01,13.83%2016.92,14.41%2016.75,14.98%2016.49,15.53%2016.15,16.05%2015.73,16.52%2015.24,16.93%2014.69,17.28%2014.09,17.54%2013.45,17.72%2012.77,17.81%2012.08,17.80%2011.39,17.69%2010.72,17.48%2010.07,17.18%209.46,16.77%208.91,16.28%208.42,15.71%208.02,15.06%207.71,14.36%207.50,13.61%207.40,12.82%207.41,12.02%207.53,11.22%207.77,10.44%208.13,9.69%208.59,8.99%209.15,8.35%209.81,7.79%2010.55,7.33%2011.35,6.97%2012.21,6.72%2013.10,6.60%2014.01,6.61%2014.92,6.75%2015.82,7.02%2016.67,7.41%2017.47,7.93%2018.19,8.57%2018.83,9.30%2019.35,10.13%2019.76,11.03%2020.04,12.00%2020.19,13.00%2020.19,14.02%2020.04,15.05%2019.75,16.05%2019.31,17.01%2018.74,17.90%2018.04,18.71%2017.22,19.43%2016.31,20.02%2015.30,20.49%2014.24,20.81%2013.13,20.98%2011.99,20.99%2010.86,20.83%209.75,20.52%208.68,20.05%207.69,19.42%206.78,18.66%205.99,17.77%205.32,16.76%204.80,15.67%204.43,14.50%204.24,13.28%204.21,12.03%204.37,10.78%204.70,9.56%205.20,8.39%205.88,7.29%206.70,6.29%207.67,5.41%208.76,4.67%209.95,4.09%2011.22,3.68%2012.55,3.45%2013.91,3.41%2015.27,3.56%2016.60,3.91%2017.88,4.45%2019.08,5.16%2020.17,6.05%2021.14,7.09%2021.96,8.26%2022.60,9.54%2023.06,10.92%2023.33,12.35%2023.39,13.82%2023.24,15.29%2022.88,16.73%2022.32,18.12%2021.56,19.43%2020.62,20.62%2019.52,21.68%2018.26,22.57%2016.89,23.29%2015.41,23.80%2013.87,24.11%2012.30,24.19%2010.71,24.05%209.15,23.68%207.65,23.10%206.24,22.30' fill='none' stroke='%23B9924C' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+<style>
+:root { --paper:#F7F3EA; --sheet:#FBF8F1; --navy:#1B2A4A; --ink:#22283A; --gold:#B9924C; --gold-soft:#D8BC85; --line:#E3DACA; --muted:#6E6A5E;
+  --ok:#7FA36C; --mid:#C99A45; --hot:#C2584C;
+  --serif:"Cormorant Garamond", Garamond, "Times New Roman", serif; --sans:"DM Sans","Helvetica Neue",Arial,sans-serif;
+  color-scheme: light; }
+*,*::before,*::after { box-sizing:border-box; }
+html { -webkit-text-size-adjust:100%; }
+body { margin:0; background:var(--paper); color:var(--ink); font-family:var(--sans); font-size:16px; line-height:1.6; -webkit-font-smoothing:antialiased;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px); }
+a { color:inherit; }
+button, input, select { font:inherit; color:inherit; }
+button { cursor:pointer; }
+[hidden] { display:none !important; }
+:focus-visible { outline:2px solid var(--gold); outline-offset:3px; }
+.app { max-width:680px; margin:0 auto; padding:0 20px; min-height:100vh; display:flex; flex-direction:column; }
+header.top { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:18px 0; border-bottom:1px solid var(--line); }
+.brand { display:inline-flex; align-items:center; gap:9px; color:var(--navy); text-decoration:none; }
+.brand svg { color:var(--gold); flex:none; }
+.brand span { font-family:var(--serif); font-size:22px; font-weight:600; letter-spacing:.08em; }
+nav.tabs { display:flex; gap:4px; }
+nav.tabs button { border:none; background:none; font-size:13.5px; color:var(--muted); padding:6px 8px; border-radius:8px; }
+nav.tabs button[aria-current="true"] { color:var(--navy); background:rgba(27,42,74,.07); font-weight:600; }
+main { flex:1; padding:28px 0 12px; }
+.screen { display:none; }
+.screen.on { display:block; animation:in .35s ease both; }
+@keyframes in { from { opacity:0; transform:translateY(6px); } to { opacity:1; transform:none; } }
+@media (prefers-reduced-motion: reduce) { .screen.on { animation:none; } }
+.kicker { font-size:12.5px; font-weight:600; color:var(--gold); letter-spacing:.06em; text-transform:uppercase; margin:0 0 10px; }
+h1 { font-family:var(--serif); font-weight:500; color:var(--navy); font-size:clamp(40px,9vw,58px); line-height:1.02; margin:0 0 18px; letter-spacing:-.01em; }
+h1 em { font-style:italic; font-weight:400; color:var(--gold); }
+h2 { font-family:var(--serif); font-weight:600; color:var(--navy); font-size:clamp(27px,6vw,34px); line-height:1.12; margin:0 0 10px; }
+h3 { font-family:var(--serif); font-weight:600; color:var(--navy); font-size:22px; line-height:1.2; margin:0 0 6px; }
+.lede { font-family:var(--serif); font-size:clamp(20px,4.6vw,23px); line-height:1.45; margin:0 0 22px; }
+.muted { color:var(--muted); }
+.small { font-size:14px; }
+p { margin:0 0 14px; }
+.btn { display:inline-flex; align-items:center; justify-content:center; gap:8px; border:1px solid var(--navy); background:transparent; border-radius:999px; padding:13px 24px; font-size:15.5px; font-weight:500; text-decoration:none; color:var(--navy); min-height:48px; }
+.btn.main { background:var(--navy); color:var(--sheet); }
+.btn.main:hover { background:#2A3D63; }
+.btn.main:disabled { background:#A7ADBA; border-color:#A7ADBA; cursor:not-allowed; }
+.btn.ghost:hover { background:rgba(27,42,74,.06); }
+.btn.sm { padding:8px 14px; min-height:36px; font-size:14px; }
+.btn.link { border:none; padding:8px 0; min-height:0; color:var(--muted); text-decoration:underline; text-underline-offset:3px; background:none; }
+.row { display:flex; gap:12px; flex-wrap:wrap; align-items:center; }
+.panel { background:var(--sheet); border:1px solid var(--line); border-radius:16px; padding:20px; margin:0 0 16px; }
+.duo { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin:22px 0 24px; }
+@media (max-width:560px) { .duo { grid-template-columns:1fr; } }
+.duo .panel { margin:0; }
+.duo h3 { font-size:20px; }
+.duo p { font-size:15px; margin:0; }
+.tag { display:inline-block; font-size:12.5px; font-weight:600; border-radius:999px; padding:3px 11px; color:#fff; background:var(--c,var(--navy)); }
+.tag.legal { --c:var(--navy); } .tag.lettre { --c:var(--gold); }
+
+/* Choix */
+.choices { display:grid; gap:10px; margin:0 0 20px; }
+.choice { display:block; width:100%; text-align:left; border:1px solid var(--line); background:var(--sheet); border-radius:14px; padding:16px 18px; min-height:58px; }
+.choice:hover { border-color:var(--gold); }
+.choice strong { display:block; font-weight:600; font-size:16.5px; color:var(--navy); }
+.choice span { display:block; font-size:14px; color:var(--muted); margin-top:2px; }
+.step-q { font-family:var(--serif); font-size:clamp(25px,5.8vw,31px); line-height:1.2; color:var(--navy); margin:0 0 18px; }
+
+/* Formulaire */
+label.f { display:block; margin:0 0 16px; }
+label.f > span { display:block; font-size:14.5px; font-weight:500; color:var(--navy); margin-bottom:5px; }
+label.f small { display:block; font-size:13px; color:var(--muted); margin-top:4px; }
+input[type=text], input[type=date], input[type=number], select { width:100%; border:1px solid var(--line); background:#fff; border-radius:10px; padding:11px 12px; font-size:16px; }
+input:focus, select:focus { outline:2px solid var(--gold-soft); border-color:var(--gold); }
+.dur { display:grid; grid-template-columns:110px 1fr; gap:10px; }
+.check { display:flex; gap:10px; align-items:flex-start; font-size:15px; margin:0 0 14px; cursor:pointer; }
+.check input { width:20px; height:20px; margin-top:2px; accent-color:var(--navy); flex:none; }
+.note { border-left:3px solid var(--gold); padding:4px 0 4px 14px; margin:0 0 18px; font-size:15px; }
+.note.hot { border-color:var(--hot); }
+
+/* Résultat du calcul */
+.result { border-radius:18px; padding:22px; margin:6px 0 18px; background:var(--navy); color:#F7F3EA; }
+.result .kicker { color:var(--gold-soft); margin-bottom:4px; }
+.result .big { font-family:var(--serif); font-size:clamp(30px,7vw,40px); line-height:1.1; font-weight:600; margin:0 0 6px; }
+.result .left { font-size:15px; color:#D3D7E0; margin:0; }
+.result .left strong { color:#fff; }
+.result.past { background:#6A2018; }
+.steps { list-style:none; padding:0; margin:0; counter-reset:s; }
+.steps li { counter-increment:s; position:relative; padding:0 0 12px 34px; font-size:15px; }
+.steps li::before { content:counter(s); position:absolute; left:0; top:0; width:24px; height:24px; border-radius:50%; border:1.5px solid var(--gold); color:var(--gold); font-size:13px; font-weight:600; display:flex; align-items:center; justify-content:center; }
+.steps li a { font-size:13px; color:var(--navy); }
+.safety { background:#FFF7E6; border:1px solid var(--gold-soft); border-radius:14px; padding:14px 16px; font-size:15px; margin:0 0 18px; }
+
+/* Relevé */
+.item { display:grid; grid-template-columns:auto 1fr; gap:4px 16px; align-items:start; background:#fff; border:1px solid var(--line); border-radius:16px; padding:16px 18px; margin:0 0 12px; }
+.item .cd { grid-row:span 3; text-align:center; min-width:74px; border-radius:12px; padding:8px 6px; background:var(--c); color:#fff; }
+.item .cd strong { display:block; font-family:var(--serif); font-size:30px; line-height:1; }
+.item .cd span { font-size:11.5px; }
+.item h3 { font-size:20px; margin:0; }
+.item .when { font-size:14.5px; margin:0; }
+.item .acts { display:flex; gap:12px; flex-wrap:wrap; }
+.empty { text-align:center; color:var(--muted); padding:30px 10px; }
+
+/* Repères */
+table.ref { width:100%; border-collapse:collapse; font-size:15px; margin:0 0 6px; }
+table.ref th { text-align:left; font-size:12.5px; color:var(--muted); font-weight:600; border-bottom:1px solid var(--line); padding:8px 8px 8px 0; }
+table.ref td { border-bottom:1px solid var(--line); padding:10px 8px 10px 0; vertical-align:top; }
+table.ref td.d { font-weight:600; color:var(--navy); white-space:nowrap; }
+table.ref a { font-size:13px; color:var(--navy); }
+@media (max-width:520px) { table.ref, table.ref tbody, table.ref tr, table.ref td { display:block; } table.ref thead { display:none; } table.ref tr { border-bottom:1px solid var(--line); padding:10px 0; } table.ref td { border:none; padding:2px 0; } }
+
+.cta { background:var(--navy); color:#F7F3EA; border-radius:18px; padding:24px 22px; margin:26px 0 16px; }
+.cta h3 { color:#F7F3EA; }
+.cta p { color:#D3D7E0; font-size:15px; }
+.cta .btn { background:var(--gold); border-color:var(--gold); color:var(--navy); font-weight:600; }
+.warn { font-size:13.5px; color:var(--muted); border-top:1px solid var(--line); padding-top:14px; margin-top:20px; }
+.next-links a { font-weight:600; color:var(--navy); }
+footer.foot { border-top:1px solid var(--line); padding:22px 0 34px; font-size:13.5px; color:var(--muted); }
+footer.foot .sig { font-family:var(--serif); font-style:italic; font-size:19px; color:var(--navy); margin:0 0 8px; }
+footer.foot p { margin:0 0 6px; }
+details.mentions { margin-top:10px; }
+details.mentions summary { cursor:pointer; color:var(--navy); font-weight:500; }
+details.mentions h4 { font-family:var(--serif); font-size:18px; color:var(--navy); margin:16px 0 4px; }
+details.mentions p { font-size:13.5px; }
+.print-only { display:none; }
+@media print {
+  @page { margin:16mm 14mm; }
+  body { background:#fff; font-size:11.5pt; }
+  .no-print, header.top, details.mentions, .item .acts { display:none !important; }
+  .print-only { display:block; }
+  .app { max-width:none; padding:0; }
+  .screen { display:none !important; }
+  .screen.on { display:block !important; animation:none; }
+  .item, .panel { break-inside:avoid; }
+  .item .cd, .result { -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+}
+.skip{position:absolute;left:-9999px;top:8px;z-index:30;background:var(--navy);color:#fff;padding:8px 16px;border-radius:999px;font-size:14px;text-decoration:none}.skip:focus{left:12px}
+
+/* Spécifique à La Balance */
+.four { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:8px; margin:22px 0 24px; }
+@media (max-width:560px) { .four { grid-template-columns:1fr 1fr; } }
+.four div { background:var(--sheet); border:1px solid var(--line); border-radius:14px; padding:12px; }
+.four strong { display:block; font-family:var(--serif); font-size:20px; color:var(--navy); line-height:1.15; }
+.four span { font-size:13px; color:var(--muted); }
+.progress { display:flex; align-items:center; gap:12px; margin-bottom:18px; }
+.bar { flex:1; height:4px; background:var(--line); border-radius:4px; overflow:hidden; }
+.bar i { display:block; height:100%; background:var(--gold); transition:width .3s; }
+.count { font-size:13.5px; color:var(--muted); white-space:nowrap; }
+.grid2 { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+@media (max-width:520px) { .grid2 { grid-template-columns:1fr; } }
+textarea { width:100%; border:1px solid var(--line); background:#fff; border-radius:10px; padding:11px 12px; font-size:16px; min-height:84px; resize:vertical; font-family:inherit; line-height:1.55; }
+textarea:focus { outline:2px solid var(--gold-soft); border-color:var(--gold); }
+textarea.txt { min-height:180px; font-size:15px; }
+.chips { display:flex; flex-wrap:wrap; gap:6px; }
+.chip { border:1px solid var(--line); background:var(--sheet); border-radius:999px; padding:8px 14px; font-size:14.5px; min-height:40px; text-align:left; }
+.chip[aria-pressed="true"] { background:var(--navy); border-color:var(--navy); color:var(--sheet); }
+.hint { font-size:13.5px; color:var(--muted); margin:-4px 0 14px; }
+.eur { position:relative; }
+.eur input { padding-right:34px; }
+.eur::after { content:"€"; position:absolute; right:12px; bottom:12px; color:var(--muted); font-size:15px; pointer-events:none; }
+.pt { background:#fff; border:1px solid var(--line); border-radius:12px; padding:12px; margin:0 0 8px; }
+.pt .chips { margin-top:8px; }
+.pt .chip { min-height:34px; padding:5px 12px; font-size:13.5px; }
+.range { display:flex; align-items:center; gap:12px; }
+.range input[type=range] { flex:1; accent-color:var(--navy); height:30px; }
+.range output { font-family:var(--serif); font-size:26px; color:var(--navy); min-width:64px; text-align:right; }
+.ck { background:#fff; border:1px solid var(--line); border-radius:12px; padding:12px 14px; margin:0 0 8px; }
+.ck .t { font-weight:600; font-size:15px; margin:0 0 2px; }
+.ck .w { font-size:13.5px; color:var(--muted); margin:0 0 8px; }
+.ck .auto { display:inline-block; font-size:11.5px; color:#3F6431; background:#E6F0E1; border-radius:6px; padding:2px 7px; margin-left:6px; font-weight:500; }
+.ck .chip { min-height:34px; padding:5px 12px; font-size:13.5px; }
+.ck.ok { border-color:#A9C59B; }
+.ck.ko { border-color:#E7B7AF; }
+.scale { display:block; width:100%; max-width:420px; margin:6px auto 0; }
+.pans { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin:6px 0 10px; text-align:center; }
+.pans div { background:var(--sheet); border:1px solid var(--line); border-radius:12px; padding:10px; }
+.pans small { display:block; font-size:12px; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); }
+.pans strong { display:block; font-family:var(--serif); font-size:24px; color:var(--navy); line-height:1.2; }
+.pans span { font-size:12.5px; color:var(--muted); }
+.verdict { border-radius:14px; padding:14px 16px; margin:0 0 6px; font-size:15px; }
+.verdict strong { display:block; font-family:var(--serif); font-size:21px; font-weight:600; margin-bottom:2px; }
+.verdict.up { background:#E6F0E1; border:1px solid #A9C59B; color:#24411A; }
+.verdict.eq { background:#FFF4DE; border:1px solid #E5C77F; color:#5A4108; }
+.verdict.down { background:#FBEAE7; border:1px solid #E7B7AF; color:#6A2018; }
+.meter { height:8px; background:var(--line); border-radius:8px; overflow:hidden; margin:6px 0 4px; }
+.meter i { display:block; height:100%; }
+.sheet2 { background:#fff; border:1px solid var(--line); border-radius:8px; padding:22px; margin:0 0 16px; font-size:14.5px; }
+.sheet2 h3 { font-size:24px; margin:0 0 2px; }
+.sheet2 .meta { font-size:12.5px; color:var(--muted); margin:0 0 12px; }
+.sheet2 h4 { font-size:12px; font-weight:600; letter-spacing:.05em; text-transform:uppercase; color:var(--gold); margin:18px 0 6px; }
+.sheet2 p { margin:0 0 6px; }
+.sheet2 ul, .sheet2 ol { margin:0 0 6px; padding-left:18px; }
+.sheet2 li { margin-bottom:5px; }
+.sheet2 .calc { font-size:13px; color:var(--muted); }
+.reply { white-space:pre-wrap; background:var(--sheet); border:1px solid var(--line); border-radius:10px; padding:14px; font-size:14.5px; }
+.law { border-top:1px solid var(--line); padding:12px 0; }
+.law:first-child { border-top:none; padding-top:0; }
+.law p { margin:0 0 4px; font-size:15px; }
+.law a { font-size:13.5px; color:var(--navy); }
+.toast { position:fixed; left:50%; bottom:24px; transform:translateX(-50%); background:var(--navy); color:#fff; padding:10px 18px; border-radius:999px; font-size:14px; z-index:9; }
+@media print {
+  .sheet2 { border:none; padding:0; }
+  .verdict, .pans div, .meter i, .reply { -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  .reply, .verdict { break-inside:avoid; }
+  footer.foot, .after, .no-print { display:none !important; }
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+<div class="app">
+<header class="top">
+  <a class="brand" href="https://dsp-avocats.fr/" aria-label="Révéla, par DSP Avocats"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><polyline points="13.00,13.00 13.01,12.93 13.04,12.86 13.09,12.80 13.15,12.76 13.23,12.73 13.32,12.71 13.42,12.72 13.52,12.76 13.62,12.81 13.71,12.89 13.79,12.99 13.86,13.11 13.90,13.25 13.92,13.40 13.92,13.56 13.89,13.73 13.82,13.90 13.73,14.07 13.60,14.23 13.44,14.37 13.26,14.49 13.05,14.58 12.82,14.64 12.57,14.67 12.31,14.66 12.05,14.61 11.79,14.51 11.53,14.38 11.29,14.20 11.08,13.98 10.89,13.72 10.74,13.43 10.63,13.11 10.57,12.77 10.55,12.41 10.59,12.05 10.69,11.68 10.84,11.33 11.05,10.99 11.31,10.67 11.62,10.40 11.98,10.16 12.37,9.97 12.80,9.84 13.25,9.78 13.72,9.77 14.19,9.84 14.66,9.98 15.11,10.18 15.54,10.46 15.93,10.80 16.28,11.20 16.56,11.65 16.79,12.15 16.94,12.69 17.02,13.25 17.01,13.83 16.92,14.41 16.75,14.98 16.49,15.53 16.15,16.05 15.73,16.52 15.24,16.93 14.69,17.28 14.09,17.54 13.45,17.72 12.77,17.81 12.08,17.80 11.39,17.69 10.72,17.48 10.07,17.18 9.46,16.77 8.91,16.28 8.42,15.71 8.02,15.06 7.71,14.36 7.50,13.61 7.40,12.82 7.41,12.02 7.53,11.22 7.77,10.44 8.13,9.69 8.59,8.99 9.15,8.35 9.81,7.79 10.55,7.33 11.35,6.97 12.21,6.72 13.10,6.60 14.01,6.61 14.92,6.75 15.82,7.02 16.67,7.41 17.47,7.93 18.19,8.57 18.83,9.30 19.35,10.13 19.76,11.03 20.04,12.00 20.19,13.00 20.19,14.02 20.04,15.05 19.75,16.05 19.31,17.01 18.74,17.90 18.04,18.71 17.22,19.43 16.31,20.02 15.30,20.49 14.24,20.81 13.13,20.98 11.99,20.99 10.86,20.83 9.75,20.52 8.68,20.05 7.69,19.42 6.78,18.66 5.99,17.77 5.32,16.76 4.80,15.67 4.43,14.50 4.24,13.28 4.21,12.03 4.37,10.78 4.70,9.56 5.20,8.39 5.88,7.29 6.70,6.29 7.67,5.41 8.76,4.67 9.95,4.09 11.22,3.68 12.55,3.45 13.91,3.41 15.27,3.56 16.60,3.91 17.88,4.45 19.08,5.16 20.17,6.05 21.14,7.09 21.96,8.26 22.60,9.54 23.06,10.92 23.33,12.35 23.39,13.82 23.24,15.29 22.88,16.73 22.32,18.12 21.56,19.43 20.62,20.62 19.52,21.68 18.26,22.57 16.89,23.29 15.41,23.80 13.87,24.11 12.30,24.19 10.71,24.05 9.15,23.68 7.65,23.10 6.24,22.30" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg><span>Révéla</span></a>
+  <span class="small muted">La Balance</span>
+</header>
+
+<main id="main">
+<!-- Accueil -->
+<section class="screen on" id="s-intro" aria-labelledby="t-intro">
+  <p class="kicker">Un outil Révéla · Décider</p>
+  <h1 id="t-intro">La Balance<br><em>peser une proposition d’accord</em></h1>
+  <p class="lede">Une proposition ne se juge pas à ce que l’on demandait, mais à ce que l’on obtiendrait sans elle. Et un accord ne vaut que ce que vaut son texte.</p>
+  <p class="muted">La Balance met la proposition en regard de votre solution de rechange, chiffrée avec vos propres estimations. Elle vérifie ensuite que le texte contient ce qui rend un accord solide, repère ce qui pourrait vous pousser à signer trop vite, et prépare votre réponse.</p>
+  <div class="four"><div><strong>Ce qu’on m’offre</strong><span>la proposition</span></div><div><strong>Sans accord</strong><span>votre solution de rechange</span></div><div><strong>Le texte</strong><span>ce qui le rend solide</span></div><div><strong>Ma réponse</strong><span>accepter, préciser, contre-proposer</span></div></div>
+  <div class="row"><button class="btn main" id="btn-start">Peser une proposition</button><button class="btn ghost" id="btn-demo">Voir la balance d’Élise</button><button class="btn link" id="btn-last" hidden>Reprendre</button></div>
+  <p class="small muted" style="margin-top:22px">Attention : un accord peut être formé par un simple « oui », y compris par courriel. Pesez avant de répondre. Ce que vous saisissez reste sur cet appareil.</p>
+</section>
+
+<!-- E1 -->
+<section class="screen" id="s-e1">
+  <div class="progress"><div class="bar"><i style="width:20%"></i></div><span class="count">Étape 1 sur 5</span></div>
+  <p class="kicker">La proposition</p>
+  <h2>Qu’est-ce qu’on vous propose ?</h2>
+  <div class="panel">
+    <label class="f"><span>Dans ce litige</span><div class="chips" data-k="role"><button class="chip" data-v="rec">je réclame quelque chose</button><button class="chip" data-v="def">on me réclame quelque chose</button></div></label>
+    <label class="f"><span>La proposition vient</span><div class="chips" data-k="cadre"><button class="chip" data-v="direct">directement de l’autre partie</button><button class="chip" data-v="avocat">de son avocat</button><button class="chip" data-v="med">d’une médiation</button><button class="chip" data-v="conc">d’une conciliation</button></div></label>
+    <div class="grid2">
+      <label class="f"><span>Votre nom</span><input type="text" data-f="moi" /></label>
+      <label class="f"><span>L’autre partie</span><input type="text" data-f="autre" /></label>
+      <label class="f"><span>Date de la proposition</span><input type="date" data-f="date" /></label>
+      <label class="f"><span>Réponse attendue avant le</span><input type="date" data-f="limite" /></label>
+    </div>
+    <label class="f" style="margin:0"><span>Le texte de la proposition, si vous l’avez par écrit (facultatif)</span><textarea class="txt" data-f="texte" placeholder="Collez ici le projet d’accord ou le courriel reçu. La Balance y cherchera les clauses essentielles."></textarea><small>Il reste sur votre appareil.</small></label>
+  </div>
+  <div class="row"><button class="btn main" data-go="e2">Continuer</button><button class="btn link" data-go="intro">Retour</button></div>
+</section>
+
+<!-- E2 -->
+<section class="screen" id="s-e2">
+  <div class="progress"><div class="bar"><i style="width:40%"></i></div><span class="count">Étape 2 sur 5</span></div>
+  <p class="kicker">Ce qu’elle contient</p>
+  <h2>Ce qu’on vous offre, point par point</h2>
+  <div class="panel">
+    <div class="grid2">
+      <label class="f eur"><span id="l-asked">Ce que vous réclamiez</span><input type="number" inputmode="decimal" min="0" step="50" data-f="asked" data-num /></label>
+      <label class="f eur"><span id="l-prop">Ce que la proposition vous accorde</span><input type="number" inputmode="decimal" min="0" step="50" data-f="prop" data-num /></label>
+    </div>
+    <label class="f" style="margin:0"><span>Paiement</span><div class="chips" data-k="quand"><button class="chip" data-v="vite">en une fois, sous un mois</button><button class="chip" data-v="tard">en une fois, plus tard</button><button class="chip" data-v="ech">en plusieurs fois</button><button class="chip" data-v="flou">non précisé</button></div></label>
+  </div>
+  <h3 style="font-size:19px;margin:18px 0 4px">Vos autres demandes</h3>
+  <p class="hint" style="margin:0 0 10px">Ce qui ne se chiffre pas : des travaux, une restitution, des excuses, un calendrier. Indiquez si la proposition y répond.</p>
+  <div id="pts"></div>
+  <button class="btn sm ghost" id="btn-addpt">Ajouter une demande</button>
+  <div class="row"><button class="btn main" data-go="e3">Continuer</button><button class="btn link" data-go="e1">Retour</button></div>
+</section>
+
+<!-- E3 -->
+<section class="screen" id="s-e3">
+  <div class="progress"><div class="bar"><i style="width:60%"></i></div><span class="count">Étape 3 sur 5</span></div>
+  <p class="kicker">Sans accord</p>
+  <h2>Ce que vous obtiendriez sans elle</h2>
+  <p class="muted">Votre solution de rechange, le plus souvent : aller jusqu’au juge. Estimez honnêtement. Si vous hésitez, retenez l’hypothèse prudente, et faites vérifier vos chances par un avocat.</p>
+  <div class="panel">
+    <label class="f"><span>Vos chances d’obtenir gain de cause</span><div class="range"><input type="range" min="0" max="100" step="5" data-f="p" data-num aria-label="Vos chances, en pourcentage" /><output id="o-p">50 %</output></div><small id="p-lbl"></small></label>
+    <div class="grid2">
+      <label class="f eur"><span id="l-g">Ce que le juge vous accorderait probablement</span><input type="number" inputmode="decimal" min="0" step="50" data-f="g" data-num /></label>
+      <label class="f eur"><span id="l-r">Ce qu’il vous allouerait pour vos frais si vous gagnez</span><input type="number" inputmode="decimal" min="0" step="50" data-f="r" data-num /></label>
+      <label class="f eur"><span>Ce que vous coûterait la procédure jusqu’au bout</span><input type="number" inputmode="decimal" min="0" step="50" data-f="c" data-num /><small>Honoraires, frais d’huissier, d’expertise…</small></label>
+      <label class="f eur"><span>Ce que vous paieriez à l’autre si vous perdez</span><input type="number" inputmode="decimal" min="0" step="50" data-f="l" data-num /><small>Ses frais d’avocat (article 700) et les dépens.</small></label>
+    </div>
+    <label class="f"><span>Délai probable avant une décision</span><div class="chips" data-k="delai"><button class="chip" data-v="6">six mois</button><button class="chip" data-v="12">un an</button><button class="chip" data-v="24">deux ans</button><button class="chip" data-v="36">plus</button></div></label>
+    <label class="f" style="margin:0" id="w-solv"><span>Si vous gagnez, l’autre partie pourra-t-elle payer ?</span><div class="chips" data-k="solv"><button class="chip" data-v="sure">sans doute</button><button class="chip" data-v="doute">ce n’est pas certain</button><button class="chip" data-v="faible">probablement pas</button></div></label>
+  </div>
+  <div class="row"><button class="btn main" data-go="e4">Continuer</button><button class="btn link" data-go="e2">Retour</button></div>
+</section>
+
+<!-- E4 -->
+<section class="screen" id="s-e4">
+  <div class="progress"><div class="bar"><i style="width:80%"></i></div><span class="count">Étape 4 sur 5</span></div>
+  <p class="kicker">Le texte</p>
+  <h2>Ce qui rend un accord solide</h2>
+  <p class="muted">Un accord mal rédigé peut vous priver du procès sans vous garantir le résultat. Pour chaque point, dites si le texte le prévoit. <span id="auto-note"></span></p>
+  <div id="cks"></div>
+  <div class="row"><button class="btn main" data-go="e5">Continuer</button><button class="btn link" data-go="e3">Retour</button></div>
+</section>
+
+<!-- E5 -->
+<section class="screen" id="s-e5">
+  <div class="progress"><div class="bar"><i style="width:100%"></i></div><span class="count">Étape 5 sur 5</span></div>
+  <p class="kicker">Vous</p>
+  <h2>Dans quel état décidez-vous ?</h2>
+  <p class="muted">On accepte parfois un accord pour de mauvaises raisons, et on en refuse un bon pour d’autres. Cochez ce qui vous ressemble aujourd’hui.</p>
+  <div class="panel"><div class="chips" id="press"></div></div>
+  <div class="row"><button class="btn main" id="btn-sheet">Voir ma balance</button><button class="btn link" data-go="e4">Retour</button></div>
+</section>
+
+<!-- Fiche -->
+<section class="screen" id="s-sheet">
+  <p class="kicker no-print">Ma balance</p>
+  <div class="sheet2" id="sheet"></div>
+  <div class="panel no-print" id="reply-box">
+    <h3 style="font-size:20px">Ma réponse</h3>
+    <div class="chips" data-k="rep" style="margin:0 0 12px"><button class="chip" data-v="ok">J’accepte</button><button class="chip" data-v="res">J’accepte sous réserve</button><button class="chip" data-v="cp">Je contre-propose</button></div>
+    <label class="f eur" id="w-cp" hidden><span>Ma contre-proposition</span><input type="number" inputmode="decimal" min="0" step="50" data-f="cp" data-num /></label>
+    <div class="reply" id="reply"></div>
+    <div class="row" style="margin-top:10px"><button class="btn sm ghost" id="btn-copy">Copier le message</button></div>
+    <p class="small muted" style="margin:8px 0 0">Relisez et adaptez ce brouillon. Un « oui » écrit peut suffire à former l’accord : n’envoyez « J’accepte » qu’une fois le texte définitif relu.</p>
+  </div>
+  <div class="after">
+    <div class="panel"><h3 style="font-size:20px">Ce que disent les textes</h3><div id="law"></div></div>
+    <p class="next-links small" id="links"></p>
+    <div class="cta no-print">
+      <h3>Faire relire l’accord avant de signer</h3>
+      <p>Un accord transactionnel vous interdit ensuite d’agir en justice pour le même objet. Un avocat peut vérifier le texte, le compléter et, en le contresignant, permettre de le rendre exécutoire. Le bilan amiable gratuit commence par là.</p>
+      <a class="btn" href="mailto:contact@dsp-avocats.fr?subject=Bilan%20amiable%20gratuit%20%E2%80%94%20La%20Balance">Demander mon bilan amiable gratuit</a>
+    </div>
+    <div class="row no-print"><button class="btn main" id="btn-print">Imprimer ma balance</button><button class="btn link" data-go="e1">Modifier</button></div>
+    <p class="warn">La Balance aide à comparer une proposition avec vos propres estimations. Elle ne dit pas ce que vaut juridiquement votre dossier ni vos chances réelles devant un juge, et ne remplace pas l’analyse d’un avocat.</p>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <p class="sig">Le droit existe lorsqu’on le révèle.</p>
+  <p>Révéla, par SELARL DSP Avocats, société d’avocats inscrite au Barreau de Nice. 8 bis rue Andrioli, Le Capitole V, 06000 Nice. <a href="mailto:contact@dsp-avocats.fr">contact@dsp-avocats.fr</a></p>
+  <p class="no-print"><button class="btn link" id="btn-erase" style="font-size:13.5px">Effacer mes données de cet appareil</button></p>
+  <details class="mentions" id="mentions-legales">
+    <summary>Mentions légales et confidentialité</summary>
+    <h4>Éditeur</h4>
+    <p>La Balance est éditée par la SELARL DSP Avocats, société d’avocats inscrite au Barreau de Nice, au capital de 402 euros, SIREN 978 376 234. Siège : 8 bis rue Andrioli, Le Capitole V, 06000 Nice. Téléphone : 04 93 97 66 66. Courriel : contact@dsp-avocats.fr.</p>
+    <h4>Directeur de la publication</h4>
+    <p>SELARL DSP Avocats, représentée par ses cogérants, Lucas Panicucci et Claire Delmasse Simoni.</p>
+    <h4>Hébergement</h4>
+    <p>Vercel Inc., 440 North Barranca Avenue, Suite 4133, Covina, Californie 91723, États-Unis. vercel.com.</p>
+    <h4>Confidentialité</h4>
+    <p>La Balance fonctionne entièrement dans votre navigateur. Ce que vous saisissez, y compris le texte de la proposition, est enregistré uniquement dans le stockage local de votre appareil. Rien n’est transmis au cabinet. Le site n’utilise ni cookie publicitaire ni outil de mesure d’audience. Le bouton « Effacer mes données » supprime tout. Sur un appareil partagé, pensez à l’utiliser.</p>
+    <p>Si vous écrivez au cabinet, les informations que vous transmettez sont traitées par la SELARL DSP Avocats pour répondre à votre demande. Elles sont couvertes par le secret professionnel de l’avocat. Vous pouvez demander à tout moment l’accès à vos données, leur rectification ou leur suppression, à contact@dsp-avocats.fr.</p>
+    <h4>Nature de l’outil</h4>
+    <p>La Balance est un outil pédagogique d’aide à la décision. Le calcul repose entièrement sur vos estimations ; la recherche de clauses dans le texte repose sur des formules usuelles et peut se tromper. Elle ne constitue pas une consultation juridique et ne remplace pas l’analyse personnalisée d’un avocat. L’exemple d’Élise est fictif.</p>
+    <h4>Propriété intellectuelle</h4>
+    <p>Les textes, visuels et outils du site sont la propriété de la SELARL DSP Avocats. Toute reproduction sans autorisation est interdite.</p>
+  </details>
+</footer>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  var LIENS = { pourparler: "", portee: "", registre: "" };   /* à renseigner au fil des mises en ligne */
+  var KEY = "revela-balance-v1";
+  function L(id) { return "https://www.legifrance.gouv.fr/codes/article_lc/" + id; }
+  /* Références vérifiées sur Légifrance le 10 octobre 2026 */
+  var R = {
+    c2044: ["Article 2044 du Code civil", L("LEGIARTI000033458766"), "La transaction est un contrat par lequel les parties, par des concessions réciproques, terminent une contestation née ou préviennent une contestation à naître. Elle doit être rédigée par écrit."],
+    c2048: ["Article 2048 du Code civil", L("LEGIARTI000006445613"), "La renonciation faite dans une transaction ne s’entend que de ce qui est relatif au différend qui y a donné lieu."],
+    c2052: ["Article 2052 du Code civil", L("LEGIARTI000033458761"), "La transaction fait obstacle à l’introduction ou à la poursuite entre les parties d’une action en justice ayant le même objet."],
+    c1103: ["Article 1103 du Code civil", L("LEGIARTI000032040777"), "Les contrats légalement formés tiennent lieu de loi à ceux qui les ont faits."],
+    c1130: ["Article 1130 du Code civil", L("LEGIARTI000032040901"), "L’erreur, le dol et la violence vicient le consentement lorsque, sans eux, une partie n’aurait pas contracté, ou à des conditions substantiellement différentes."],
+    c12315: ["Article 1231-5 du Code civil", L("LEGIARTI000032010131"), "Le contrat peut prévoir une pénalité en cas d’inexécution ; le juge peut la modérer ou l’augmenter si elle est manifestement excessive ou dérisoire."],
+    p1541: ["Article 1541 du Code de procédure civile", L("LEGIARTI000051930504"), "L’accord amiable obéit au droit commun des contrats : sauf disposition contraire, il est parfait par le seul échange des consentements. Constaté par écrit, il peut recevoir force exécutoire."],
+    p1543: ["Article 1543 du Code de procédure civile", L("LEGIARTI000051930495"), "Une transaction ou un accord issu d’une conciliation, d’une médiation ou d’une procédure participative peut être homologué par le juge pour recevoir force exécutoire."],
+    p1544: ["Article 1544 du Code de procédure civile", L("LEGIARTI000051930492"), "Le juge n’homologue l’accord que si son objet est licite et conforme à l’ordre public ; il ne peut pas en modifier les termes."],
+    p1546: ["Article 1546 du Code de procédure civile", L("LEGIARTI000051930483"), "L’acte contresigné par les avocats de chacune des parties constatant un accord transactionnel peut être revêtu de la formule exécutoire par le greffe."],
+    p394: ["Article 394 du Code de procédure civile", L("LEGIARTI000006410619"), "Le demandeur peut se désister de sa demande en vue de mettre fin à l’instance."]
+  };
+
+  var CKS = [
+    { id: "ecrit", t: "L’accord est écrit, daté et signé par chacun", w: "La transaction doit être rédigée par écrit. Sans écrit signé, la preuve de ce qui a été convenu devient fragile.", re: /fait a |signature|signe par|lu et approuve/, ask: "un écrit daté et signé par chacun de nous", law: "c2044" },
+    { id: "conc", t: "Chacun fait une concession", w: "Sans concessions réciproques, ce n’est pas une transaction : l’un abandonne tout, l’autre rien.", re: /concession|reciproque/, ask: "les concessions consenties de part et d’autre", law: "c2044" },
+    { id: "objet", t: "Le différend réglé est clairement délimité", w: "Quel contrat, quel chantier, quelle période ? Ce qui n’y figure pas n’est pas couvert, et ce qui y figure ne pourra plus être plaidé.", re: /differend|litige|relatif a|concernant|au titre de/, ask: "la délimitation exacte du différend réglé (contrat, chantier, période)", law: "c2048" },
+    { id: "argent", t: "Les sommes, les dates et le mode de paiement sont précis", w: "Un montant sans date ni mode de paiement ouvre un nouveau conflit.", re: /(\d[\d\s.]*\s*(euros?|€)).*(au plus tard|avant le|le \d|sous \d|dans les? \d)|(au plus tard|avant le).*(\d[\d\s.]*\s*(euros?|€))/, ask: "le montant, la date limite et le mode de chaque paiement", law: "" },
+    { id: "faire", t: "Chaque engagement à exécuter a un contenu et une date", w: "« Reprendre le chantier » ne suffit pas : quoi, comment, avant quelle date, constaté comment ?", re: /(reprend|realise|livre|retire|enleve|restitue|remet).*(avant le|au plus tard|d'ici le)/, ask: "un contenu et une date précis pour chaque engagement à exécuter", law: "", na: true },
+    { id: "renon", t: "Les renonciations sont réciproques et limitées à ce différend", w: "Vérifiez qui renonce à quoi. Une renonciation à « toute action » d’un seul côté est déséquilibrée.", re: /renonce/, ask: "des renonciations réciproques, limitées à ce différend", law: "c2052" },
+    { id: "inex", t: "Le texte prévoit ce qui se passe s’il n’est pas respecté", w: "Pénalité de retard, exigibilité immédiate, intérêts, retour au procès : sans clause, il faudra tout recommencer.", re: /penalite|clause penale|a defaut de (paiement|respect)|en cas de (non|manquement|retard|inexecution|defaut)|deviendra exigible|resolution/, ask: "ce qui se passera si l’un de nous ne respecte pas ses engagements", law: "c12315" },
+    { id: "exec", t: "L’accord pourra être rendu exécutoire", w: "Homologation par le juge, ou acte contresigné par les avocats de chacun puis revêtu de la formule exécutoire par le greffe : sans cela, en cas d’inexécution, il faudra d’abord obtenir un jugement.", re: /homolog|formule executoire|contresign|force executoire/, ask: "la possibilité de faire homologuer l’accord ou de le revêtir de la formule exécutoire", law: "p1546" },
+    { id: "proc", t: "Le sort de la procédure en cours est réglé", w: "Si un juge est déjà saisi : qui se désiste, quand, et qui paie les frais de l’instance ?", re: /desist|instance en cours|procedure en cours|radiation/, ask: "le désistement de la procédure en cours et ses conditions", law: "p394", na: true },
+    { id: "frais", t: "La charge des frais est prévue", w: "Avocats, médiateur, expert, huissier : sans clause, chacun risque de se retourner contre l’autre.", re: /frais|depens|honoraires|conserve(ra)? la charge/, ask: "la prise en charge des frais de chacun", law: "" },
+    { id: "conf", t: "La confidentialité ou le non-dénigrement sont prévus", w: "Utile si l’affaire touche votre réputation ou votre vie privée. Facultatif sinon.", re: /confidenti|denigr/, ask: "une clause de confidentialité réciproque", law: "", na: true }
+  ];
+  var PRESS = [
+    ["presse", "On me presse de répondre", "Un délai très court ne vous oblige pas. Demandez par écrit quelques jours de réflexion : une offre sérieuse y survit presque toujours."],
+    ["epuise", "Je suis épuisé(e) par ce conflit", "La fatigue pousse à accepter n’importe quoi pour en finir. Si l’écart chiffré est faible, la paix a une valeur ; s’il est important, attendez d’être reposé(e) pour décider."],
+    ["peur", "J’ai peur d’aller devant le juge", "La peur du procès fait souvent surestimer ses risques. Faites évaluer vos chances par un avocat avant de renoncer à vos droits."],
+    ["colere", "Je refuse par principe, ou par colère", "Refuser coûte aussi : comparez avec la balance chiffrée. Un refus doit servir vos intérêts, pas punir l’autre."],
+    ["fuir", "Je ne veux plus avoir affaire à cette personne", "Préférez un paiement rapide et en une fois à un échéancier qui prolonge la relation, et une clause claire en cas de manquement."],
+    ["flou", "Je n’ai pas tout compris au texte", "Ne signez pas. Une transaction vous interdit ensuite d’agir en justice pour le même objet : faites-la relire."],
+    ["seul", "Je décide seul(e) alors que d’autres sont concernés", "Associé, conjoint, assureur : vérifiez que personne d’autre ne doit consentir, et que votre assurance de protection juridique a été informée."]
+  ];
+
+  var DEMO = { role: "rec", cadre: "direct", moi: "Élise Ferrand", autre: "Marc Martin", date: "2026-11-25", limite: "2026-11-28",
+    texte: "Protocole d’accord\nEntre Marc Martin, artisan cuisiniste, et Élise Ferrand.\nAfin de mettre fin au différend relatif au chantier de cuisine (devis du 12 juin 2026), les parties conviennent :\n1. M. Martin rembourse à Mme Ferrand la somme de 3 000 euros, par virement, au plus tard le 31 décembre 2026.\n2. M. Martin retire à ses frais les caissons livrés, avant le 15 décembre 2026.\n3. Mme Ferrand renonce à toute action relative à ce chantier.\n4. Les parties s’engagent à ne pas se dénigrer.\nFait à Nice, le 25 novembre 2026.",
+    asked: 5000, prop: 3000, quand: "tard",
+    pts: [{ t: "Retrait des caissons non conformes", s: "oui" }, { t: "Remboursement intégral de l’acompte de 4 200 €", s: "part" }, { t: "Indemnisation des mois sans cuisine", s: "non" }],
+    p: 70, g: 5000, r: 1500, c: 2000, l: 1500, delai: "12", solv: "doute",
+    ck: { ecrit: "oui", conc: "oui", objet: "oui", argent: "oui", faire: "oui", renon: "non", inex: "non", exec: "non", proc: "na", frais: "non", conf: "oui" },
+    press: ["presse", "epuise"], rep: "res", cp: "", demo: true };
+  function BLANK() { return { role: "", cadre: "", moi: "", autre: "", date: "", limite: "", texte: "", asked: "", prop: "", quand: "", pts: [{ t: "", s: "" }], p: 50, g: "", r: "", c: "", l: "", delai: "", solv: "", ck: {}, press: [], rep: "", cp: "", demo: false }; }
+
+  var st = { p: BLANK(), screen: "intro" };
+  function load() { try { var r = localStorage.getItem(KEY); if (r) { var d = JSON.parse(r); if (d && typeof d === "object") { st.screen = d.screen || "intro"; st.p = Object.assign(BLANK(), d.p || {}); } } } catch (e) {} }
+  function save() { try { localStorage.setItem(KEY, JSON.stringify(st)); } catch (e) {} }
+  var $ = function (id) { return document.getElementById(id); };
+  function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+  var SCREENS = ["intro", "e1", "e2", "e3", "e4", "e5", "sheet"];
+  function show(n, keep) { SCREENS.forEach(function (x) { $("s-" + x).classList.toggle("on", x === n); }); if (!keep) { st.screen = n; save(); } window.scrollTo(0, 0); }
+  function go(n) { if (n === "e4") autoCk(); sync(); if (n === "sheet") renderSheet(); show(n); }
+  function toast(t) { var d = document.createElement("div"); d.className = "toast"; d.setAttribute("role", "status"); d.setAttribute("aria-live", "polite"); d.textContent = t; document.body.appendChild(d); setTimeout(function () { d.remove(); }, 2300); }
+  function num(v) { var n = parseFloat(String(v == null ? "" : v).replace(",", ".")); return isFinite(n) ? n : 0; }
+  function eur(n) { return Math.round(Math.abs(n)).toLocaleString("fr-FR") + " €"; }
+  function norm(s) { return String(s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[’`]/g, "'").toLowerCase(); }
+  var MOIS = ["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"];
+  function frd(v) { var p = (v || "").split("-"); return p.length === 3 ? (+p[2] === 1 ? "1er" : +p[2]) + " " + MOIS[+p[1] - 1] + " " + p[0] : ""; }
+
+  /* ---------- Détection dans le texte ---------- */
+  var detected = {};
+  function detect() { detected = {}; var t = norm(st.p.texte).replace(/\s+/g, " "); if (!t.trim()) return detected; CKS.forEach(function (c) { if (c.re.test(t)) detected[c.id] = true; }); return detected; }
+  function autoCk() { detect(); var ck = st.p.ck; CKS.forEach(function (c) { if (detected[c.id] && !ck[c.id]) ck[c.id] = "oui"; }); save(); }
+
+  /* ---------- Calcul ---------- */
+  var SOLV = { sure: 1, doute: 0.75, faible: 0.4 };
+  function calc() {
+    var p = st.p, pr = num(p.p) / 100, G = num(p.g), Rr = num(p.r), C = num(p.c), Lo = num(p.l), P = num(p.prop), S = p.role === "rec" ? (SOLV[p.solv] || 1) : 1, o = {};
+    if (p.role === "def") {
+      o.P = -P; o.A = -(1 - pr) * (G + Lo) + pr * Rr - C; o.best = Rr - C; o.worst = -(G + Lo) - C;
+      o.f = "Sans accord : " + Math.round((1 - pr) * 100) + " % de risque de payer " + eur(G + Lo) + (Rr ? ", " + Math.round(pr * 100) + " % de chances de récupérer " + eur(Rr) + " de frais" : "") + ", et " + eur(C) + " de frais de procédure dans tous les cas.";
+    } else {
+      o.P = P; o.A = pr * (G + Rr) * S - (1 - pr) * Lo - C; o.best = (G + Rr) * S - C; o.worst = -Lo - C;
+      o.f = "Sans accord : " + Math.round(pr * 100) + " % de chances d’obtenir " + eur(G + Rr) + (S < 1 ? ", réduit à " + Math.round(S * 100) + " % parce que le recouvrement est incertain" : "") + (Lo ? " ; " + Math.round((1 - pr) * 100) + " % de risque de payer " + eur(Lo) : "") + " ; et " + eur(C) + " de frais de procédure dans tous les cas.";
+    }
+    o.ref = Math.max(Math.abs(o.P), Math.abs(o.A), num(p.asked), 1000);
+    o.band = Math.max(300, 0.1 * o.ref);
+    o.d = o.P - o.A;
+    o.v = o.d >= o.band ? "up" : o.d <= -o.band ? "down" : "eq";
+    return o;
+  }
+  function sv(n) { return n >= 0 ? "vous recevez " + eur(n) : "vous payez " + eur(n); }
+  function svC(n) { return (n >= 0 ? "+" : "−") + " " + eur(n); }
+  function solidity() {
+    var ck = st.p.ck, tot = 0, ok = 0, miss = [];
+    CKS.forEach(function (c) { var v = ck[c.id]; if (v === "na") return; if (c.na && !v) return; tot++; if (v === "oui") ok++; else miss.push(c); });
+    return { tot: tot, ok: ok, miss: miss, rate: tot ? ok / tot : 0 };
+  }
+  function advice(o, so) { if (o.v === "down") return "cp"; if (!so.miss.length && !st.p.pts.some(function (x) { return x.t && x.s === "non"; })) return "ok"; return "res"; }
+
+  /* ---------- Saisie ---------- */
+  function renderPts() {
+    $("pts").innerHTML = st.p.pts.map(function (x, i) {
+      return '<div class="pt" data-i="' + i + '"><input type="text" data-pt value="' + esc(x.t) + '" placeholder="Par exemple : reprise du chantier, retrait du matériel, excuses écrites" aria-label="Demande ' + (i + 1) + '" />' +
+        '<div class="chips">' + [["oui", "obtenu"], ["part", "en partie"], ["non", "absent"]].map(function (s) { return '<button class="chip" data-ps="' + s[0] + '" aria-pressed="' + (x.s === s[0]) + '">' + s[1] + "</button>"; }).join("") + '<button class="chip" data-pdel aria-label="Retirer">×</button></div></div>';
+    }).join("");
+  }
+  function renderCks() {
+    detect(); var any = Object.keys(detected).length;
+    $("auto-note").textContent = st.p.texte.trim() ? (any ? "Les points repérés dans votre texte sont pré-cochés : vérifiez-les." : "Rien n’a été repéré automatiquement dans votre texte.") : "";
+    $("cks").innerHTML = CKS.map(function (c) {
+      var v = st.p.ck[c.id] || "", opts = [["oui", "oui"], ["non", "non"]]; if (c.na) opts.push(["na", "sans objet"]); else opts.push(["nsp", "je ne sais pas"]);
+      return '<div class="ck ' + (v === "oui" ? "ok" : v === "non" ? "ko" : "") + '" data-c="' + c.id + '"><p class="t">' + esc(c.t) + (detected[c.id] ? '<span class="auto">repéré dans le texte</span>' : "") + '</p><p class="w">' + esc(c.w) + '</p><div class="chips">' +
+        opts.map(function (o) { return '<button class="chip" data-cv="' + o[0] + '" aria-pressed="' + (v === o[0]) + '">' + o[1] + "</button>"; }).join("") + "</div></div>";
+    }).join("");
+  }
+  function renderPress() { $("press").innerHTML = PRESS.map(function (x) { return '<button class="chip" data-pr="' + x[0] + '" aria-pressed="' + (st.p.press.indexOf(x[0]) >= 0) + '">' + esc(x[1]) + "</button>"; }).join(""); }
+  function sync() {
+    var p = st.p, def = p.role === "def";
+    document.querySelectorAll("[data-f]").forEach(function (el) { if (document.activeElement !== el) el.value = p[el.getAttribute("data-f")] == null ? "" : p[el.getAttribute("data-f")]; });
+    document.querySelectorAll(".chips[data-k]").forEach(function (g) { var k = g.getAttribute("data-k"); g.querySelectorAll(".chip").forEach(function (b) { b.setAttribute("aria-pressed", String(String(p[k]) === b.getAttribute("data-v"))); }); });
+    $("l-asked").textContent = def ? "Ce que l’on vous réclamait" : "Ce que vous réclamiez";
+    $("l-prop").textContent = def ? "Ce que vous paieriez selon la proposition" : "Ce que la proposition vous accorde";
+    $("l-g").textContent = def ? "Ce que le juge vous condamnerait à payer si vous perdez" : "Ce que le juge vous accorderait probablement";
+    $("l-r").textContent = "Ce qu’il vous allouerait pour vos frais si vous gagnez";
+    $("w-solv").hidden = def;
+    $("o-p").textContent = num(p.p) + " %";
+    var pv = num(p.p); $("p-lbl").textContent = pv >= 80 ? "Dossier très solide : preuves écrites, droit clair." : pv >= 60 ? "Dossier favorable, avec quelques incertitudes." : pv >= 40 ? "Issue réellement incertaine." : pv >= 20 ? "Dossier fragile." : "Dossier très fragile.";
+    $("w-cp").hidden = p.rep !== "cp";
+    renderPts(); renderCks(); renderPress();
+    if ($("s-sheet").classList.contains("on")) renderReply();
+  }
+  document.querySelectorAll("[data-f]").forEach(function (el) {
+    el.addEventListener("input", function () {
+      var k = el.getAttribute("data-f"); st.p[k] = el.value; if (el.type === "range") { $("o-p").textContent = el.value + " %"; sync(); }
+      st.p.demo = false; save(); if (k === "cp") renderReply();
+    });
+  });
+  $("pts").addEventListener("input", function (e) { if (!e.target.hasAttribute("data-pt")) return; st.p.pts[+e.target.closest(".pt").getAttribute("data-i")].t = e.target.value; st.p.demo = false; save(); });
+  $("btn-addpt").onclick = function () { if (st.p.pts.length >= 8) { toast("Huit demandes suffisent."); return; } st.p.pts.push({ t: "", s: "" }); save(); renderPts(); };
+  document.addEventListener("click", function (e) {
+    var b = e.target.closest(".chips[data-k] .chip");
+    if (b) { e.preventDefault(); var k = b.parentNode.getAttribute("data-k"); st.p[k] = String(st.p[k]) === b.getAttribute("data-v") ? "" : b.getAttribute("data-v"); st.p.demo = false; save(); sync(); if (k === "rep" || k === "role") renderReply(); return; }
+    var ps = e.target.closest("[data-ps]"); if (ps) { var i = +ps.closest(".pt").getAttribute("data-i"), v = ps.getAttribute("data-ps"); st.p.pts[i].s = st.p.pts[i].s === v ? "" : v; save(); renderPts(); return; }
+    var pd = e.target.closest("[data-pdel]"); if (pd) { st.p.pts.splice(+pd.closest(".pt").getAttribute("data-i"), 1); if (!st.p.pts.length) st.p.pts.push({ t: "", s: "" }); save(); renderPts(); return; }
+    var cv = e.target.closest("[data-cv]"); if (cv) { var id = cv.closest(".ck").getAttribute("data-c"), val = cv.getAttribute("data-cv"); st.p.ck[id] = st.p.ck[id] === val ? "" : val; save(); renderCks(); return; }
+    var pr = e.target.closest("[data-pr]"); if (pr) { var a = st.p.press, x = pr.getAttribute("data-pr"), j = a.indexOf(x); if (j >= 0) a.splice(j, 1); else a.push(x); save(); renderPress(); }
+  });
+
+  /* ---------- Balance (SVG) ---------- */
+  function scaleSvg(o) {
+    var ang = Math.max(-14, Math.min(14, (o.A - o.P) / o.ref * 14)), rad = ang * Math.PI / 180, cx = 210, cy = 54, arm = 150;
+    var lx = cx - arm * Math.cos(rad), ly = cy - arm * Math.sin(rad), rx = cx + arm * Math.cos(rad), ry = cy + arm * Math.sin(rad);
+    function pan(x, y, fill) { return '<line x1="' + x + '" y1="' + y + '" x2="' + (x - 34) + '" y2="' + (y + 52) + '" stroke="#B9A88A" stroke-width="1.2"/><line x1="' + x + '" y1="' + y + '" x2="' + (x + 34) + '" y2="' + (y + 52) + '" stroke="#B9A88A" stroke-width="1.2"/><path d="M' + (x - 42) + " " + (y + 52) + " Q" + x + " " + (y + 74) + " " + (x + 42) + " " + (y + 52) + 'Z" fill="' + fill + '" stroke="#1F2E4D" stroke-width="1.4"/>'; }
+    return '<svg class="scale" viewBox="0 0 420 170" role="img" aria-label="Balance : la proposition à gauche, votre solution de rechange à droite">' +
+      '<path d="M' + (cx - 46) + ' 162 L' + (cx + 46) + ' 162 L' + (cx + 14) + ' 150 L' + (cx - 14) + ' 150Z" fill="#1F2E4D"/><line x1="' + cx + '" y1="150" x2="' + cx + '" y2="' + cy + '" stroke="#1F2E4D" stroke-width="4"/>' +
+      '<line x1="' + lx.toFixed(1) + '" y1="' + ly.toFixed(1) + '" x2="' + rx.toFixed(1) + '" y2="' + ry.toFixed(1) + '" stroke="#1F2E4D" stroke-width="4" stroke-linecap="round"/><circle cx="' + cx + '" cy="' + cy + '" r="6" fill="#C9A45C"/>' +
+      pan(lx, ly, o.v === "up" ? "#E6F0E1" : "#F3EEE2") + pan(rx, ry, o.v === "down" ? "#E6F0E1" : "#F3EEE2") + "</svg>";
+  }
+
+  /* ---------- Réponse ---------- */
+  function renderReply() {
+    var p = st.p, o = calc(), so = solidity(), rep = p.rep || advice(o, so), him = p.autre ? p.autre.trim() : "", me = p.moi ? p.moi.trim() : "", def = p.role === "def";
+    var asks = so.miss.map(function (c) { return c.ask; }), abs = p.pts.filter(function (x) { return x.t && x.s && x.s !== "oui"; });
+    var t = "Bonjour" + (him ? " " + him : "") + ",\n\nJe vous remercie pour votre proposition" + (p.date ? " du " + frd(p.date) : "") + ".\n\n";
+    if (rep === "ok") t += "Je suis d’accord sur son principe. Je vous propose de formaliser notre accord dans un écrit que chacun de nous relira et signera.\n";
+    else if (rep === "res") {
+      t += "Je suis disposé(e) à l’accepter, sous réserve que l’accord définitif prévoie :\n" + (asks.length ? asks.map(function (a) { return "– " + a; }).join(" ;\n") + ".\n" : "– les modalités exactes de son exécution.\n");
+      if (abs.length) t += "\nJe souhaite également que nous évoquions : " + abs.map(function (x) { return x.t.charAt(0).toLowerCase() + x.t.slice(1); }).join(" ; ") + ".\n";
+    } else {
+      var cp = num(p.cp);
+      t += "Elle ne me permet pas, en l’état, de clore notre différend. " + (cp ? (def ? "Je vous propose de régler la somme de " + eur(cp) : "Je vous propose de le régler moyennant le paiement de la somme de " + eur(cp)) + ", " : "Je vous propose [votre contre-proposition], ") + "selon des modalités à préciser ensemble" + (abs.length ? ", ainsi que la prise en compte de : " + abs.map(function (x) { return x.t.charAt(0).toLowerCase() + x.t.slice(1); }).join(" ; ") : "") + ".\n";
+      if (asks.length) t += "\nL’accord définitif devra aussi prévoir : " + asks.slice(0, 4).join(" ; ") + ".\n";
+    }
+    t += "\nJe reste disponible pour en échanger.\n\nCordialement,\n" + (me || "");
+    $("reply").textContent = t; return t;
+  }
+  $("btn-copy").onclick = function () { var t = renderReply(); try { navigator.clipboard.writeText(t).then(function () { toast("Message copié."); }, function () { toast("Copie impossible : sélectionnez le texte."); }); } catch (e) { toast("Copie impossible : sélectionnez le texte."); } };
+
+  /* ---------- Fiche ---------- */
+  function renderSheet() {
+    var p = st.p, o = calc(), so = solidity(), def = p.role === "def", law = ["p1541"], h = "";
+    if (!p.rep) { p.rep = advice(o, so); save(); }
+    h += "<h3>Ma balance</h3><p class=\"meta\">" + esc(p.moi || "Vous") + (p.autre ? " · proposition de " + esc(p.autre) : "") + (p.date ? " du " + frd(p.date) : "") + (p.limite ? " · réponse attendue avant le " + frd(p.limite) : "") + (p.demo ? " · exemple fictif" : "") + "</p>";
+    /* 1 */
+    h += "<h4>1. Ce qu’elle vaut, face à votre solution de rechange</h4>" + scaleSvg(o);
+    h += '<div class="pans"><div><small>La proposition</small><strong>' + svC(o.P) + "</strong><span>" + esc(sv(o.P)) + ({ vite: ", sous un mois", tard: ", plus tard", ech: ", en plusieurs fois", flou: ", à une date non précisée" }[p.quand] || "") + '</span></div><div><small>Sans accord</small><strong>' + svC(o.A) + "</strong><span>en moyenne pondérée" + (p.delai ? ", dans " + ({ "6": "six mois", "12": "un an", "24": "deux ans", "36": "plus de deux ans" }[p.delai]) : "") + "</span></div></div>";
+    var vt = { up: ["La proposition pèse plus", "Selon vos propres estimations, elle vous laisse mieux que votre solution de rechange, d’environ " + eur(o.d) + ", et sans attendre ni risquer."], eq: ["Les deux plateaux s’équilibrent", "L’écart est de l’ordre de " + eur(o.d) + " : ce sont alors le délai, le coût humain du conflit et la solidité du texte qui doivent faire pencher."], down: ["Votre solution de rechange pèse plus", "Selon vos estimations, vous obtiendriez en moyenne environ " + eur(o.d) + " de mieux sans cet accord. Vérifiez vos estimations, puis envisagez une contre-proposition."] }[o.v];
+    h += '<div class="verdict ' + o.v + '"><strong>' + vt[0] + "</strong>" + esc(vt[1]) + "</div>";
+    h += '<p class="calc">' + esc(o.f) + " Fourchette sans accord : au mieux " + sv(o.best) + ", au pire " + sv(o.worst) + ". Ces chiffres ne valent que ce que valent vos estimations.</p>";
+    if (o.v !== "down" && o.worst < 0) h += '<p class="calc">Le pire scénario sans accord vous coûterait ' + eur(o.worst) + " : c’est aussi ce que l’accord vous évite.</p>";
+    /* 2 */
+    var nm = p.pts.filter(function (x) { return x.t; });
+    if (nm.length) {
+      h += "<h4>2. Vos autres demandes</h4><ul>" + nm.map(function (x) { return "<li>" + esc(x.t) + " : <strong>" + ({ oui: "obtenu", part: "en partie", non: "absent" }[x.s] || "non renseigné") + "</strong></li>"; }).join("") + "</ul>";
+    }
+    /* 3 */
+    var rate = Math.round(so.rate * 100), col = so.rate >= 0.85 ? "#7FA36C" : so.rate >= 0.6 ? "#D9B25F" : "#C9665A";
+    h += "<h4>" + (nm.length ? "3" : "2") + ". La solidité du texte</h4><p><strong>" + so.ok + " sur " + so.tot + "</strong> points essentiels sont prévus.</p><div class=\"meter\"><i style=\"width:" + rate + "%;background:" + col + "\"></i></div>";
+    if (so.miss.length) h += "<p>À faire préciser avant de signer :</p><ul>" + so.miss.map(function (c) { return "<li>" + esc(c.t) + (st.p.ck[c.id] === "nsp" ? " <span class=\"muted\">(à vérifier)</span>" : "") + "</li>"; }).join("") + "</ul>";
+    CKS.forEach(function (c) { if (c.law && (so.miss.indexOf(c) >= 0 || c.id === "renon")) law.push(c.law); });
+    law.push("c2044", "c2052");
+    if (p.cadre === "med" || p.cadre === "conc") law.push("p1543", "p1544"); law.push("p1546");
+    /* 4 */
+    var pr = PRESS.filter(function (x) { return p.press.indexOf(x[0]) >= 0; }), n4 = nm.length ? 4 : 3;
+    h += "<h4>" + n4 + ". Ce qui pèse aussi</h4><ul>";
+    if (p.delai && +p.delai >= 12) h += "<li>Sans accord, il faudrait attendre " + ({ "12": "environ un an", "24": "environ deux ans", "36": "plus de deux ans" }[p.delai]) + " : un temps de conflit qui a un coût, même s’il ne se chiffre pas.</li>";
+    if (!def && p.solv && p.solv !== "sure") h += "<li>Un jugement favorable ne garantit pas le paiement : un accord exécuté volontairement est souvent mieux payé qu’une condamnation.</li>";
+    if (p.quand === "ech" || p.quand === "flou") h += "<li>Le paiement " + (p.quand === "ech" ? "échelonné" : "sans date") + " laisse un risque : exigez une clause en cas de manquement.</li>";
+    pr.forEach(function (x) { h += "<li><strong>" + esc(x[1]) + ".</strong> " + esc(x[2]) + "</li>"; });
+    if (pr.length) law.push("c1130");
+    h += "<li>Ne répondez pas « oui » avant d’avoir le texte définitif sous les yeux : un accord peut se former par le seul échange des consentements.</li></ul>";
+    /* 5 */
+    var adv = advice(o, so), at = { ok: "Accepter, en faisant formaliser l’accord par écrit.", res: "Accepter sous réserve de compléter le texte sur les points manquants.", cp: "Contre-proposer, en vous appuyant sur votre solution de rechange." }[adv];
+    h += "<h4>" + (n4 + 1) + ". Ce que la balance suggère</h4><p><strong>" + esc(at) + "</strong> La décision vous appartient : la balance ne mesure que ce que vous y avez mis.</p>";
+    if (LIENS.pourparler) h += '<p class="calc">Vous aviez fixé un seuil avec Le Pourparler ? Comparez-le à cette proposition.</p>';
+    $("sheet").innerHTML = h;
+    var seen = {}; law = law.filter(function (k) { if (!k || seen[k] || !R[k]) return false; seen[k] = 1; return true; });
+    $("law").innerHTML = law.map(function (k) { var l = R[k]; return '<div class="law"><p>' + esc(l[2]) + '</p><a href="' + l[1] + '" target="_blank" rel="noopener">' + esc(l[0]) + ", sur Légifrance</a></div>"; }).join("") + '<p class="small muted" style="margin:10px 0 0">Références vérifiées sur Légifrance le 10 octobre 2026.</p>';
+    var links = [];
+    if (LIENS.pourparler) links.push('<a href="' + LIENS.pourparler + '">Le Pourparler</a> pour retrouver votre seuil et vos intérêts');
+    if (LIENS.portee) links.push('<a href="' + LIENS.portee + '">La Portée</a> pour comprendre ce que vaudrait une décision de justice');
+    if (LIENS.registre) links.push('<a href="' + LIENS.registre + '">Le Registre</a> pour suivre l’exécution de l’accord une fois signé');
+    $("links").innerHTML = links.length ? "Pour aller plus loin : " + links.join(" · ") + "." : ""; $("links").hidden = !links.length;
+    sync(); renderReply();
+  }
+
+  document.querySelectorAll("[data-go]").forEach(function (b) { b.onclick = function () { go(b.getAttribute("data-go")); }; });
+  $("btn-sheet").onclick = function () { var p = st.p; if (!p.role || !num(p.prop) && !p.pts.some(function (x) { return x.t; })) toast("Complétez au moins votre position et la proposition."); go("sheet"); };
+  $("btn-print").onclick = function () { window.print(); };
+  $("btn-start").onclick = function () { if (st.p.demo) st.p = BLANK(); go("e1"); };
+  $("btn-demo").onclick = function () { st.p = JSON.parse(JSON.stringify(DEMO)); save(); go("sheet"); };
+  $("btn-last").onclick = function () { go("sheet"); };
+  $("btn-erase").onclick = function () { if (!this.dataset.armed) { var self = this; self.dataset.armed = "1"; self.dataset.label = self.textContent; self.textContent = "Cliquez à nouveau pour tout effacer"; setTimeout(function () { if (self.dataset.armed) { delete self.dataset.armed; self.textContent = self.dataset.label; } }, 5000); return; } delete this.dataset.armed; setTimeout(function () { try { localStorage.removeItem(KEY); } catch (e) {} }, 0);
+     try { localStorage.removeItem(KEY); } catch (e) {} st = { p: BLANK(), screen: "intro" }; sync(); $("btn-last").hidden = true; show("intro"); this.textContent = "Données effacées"; };
+  function openMentions() { if (location.hash === "#mentions-legales") $("mentions-legales").open = true; }
+  window.addEventListener("hashchange", openMentions);
+  window.__balance = { calc: calc, solidity: solidity, detect: detect };
+
+  load(); sync(); openMentions();
+  $("btn-last").hidden = !(st.p.role || st.p.prop) || st.p.demo;
+  if (SCREENS.indexOf(st.screen) > 0) go(st.screen); else show("intro", true);
+})();
+</script>
+</body>
+</html>
